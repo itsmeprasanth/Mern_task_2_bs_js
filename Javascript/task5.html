@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+
+  <body>
+    <center>
+      <table class="table-bordered">
+        <tr>
+          <td>
+            <label for="name">Name:</label>
+          </td>
+          <td>
+            <input type="text" id="name" name="name" />
+          </td>
+          <td>
+            <div class="name"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td>
+            <input type="text" id="email" name="email" />
+          </td>
+          <td>
+            <div class="email"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name">Website</label>
+          </td>
+          <td>
+            <input type="text" id="website" name="website" />
+          </td>
+          <td>
+            <div class="website"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="message">Message:</label>
+          </td>
+          <td>
+            <textarea name="message" id="message"></textarea>
+          </td>
+          <td>
+            <div class="message"></div>
+          </td>
+        </tr>
+        <br />
+      </table>
+      <button type="submit">Submit</button>
+    </center>
+    <script>
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const website = document.getElementById("website");
+      const message = document.getElementById("message");
+      const submit = document.querySelector("button");
+      const nameError = document.querySelector(".name");
+      const emailError = document.querySelector(".email");
+      const websiteError = document.querySelector(".website");
+      const messageError = document.querySelector(".message");
+      submit.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (name.value === "") {
+          nameError.style.display = "inline";
+          nameError.textContent = "This field is required";
+          nameError.style.color = "red";
+          name.style.border = "1px solid red";
+        }
+        if (email.value === "" || !email.value.includes("@")) {
+          emailError.style.display = "inline";
+          emailError.textContent = "A valid Email address is required";
+          emailError.style.color = "red";
+          email.style.border = "1px solid red";
+        }
+        if (website.value === "") {
+          websiteError.style.display = "inline";
+          websiteError.textContent = "A valid URL is required";
+          websiteError.style.color = "red";
+          website.style.border = "1px solid red";
+        }
+        if (message.value === "") {
+          messageError.style.display = "inline";
+          messageError.textContent = "This field is required";
+          messageError.style.color = "red";
+          message.style.border = "1px solid red";
+        }
+      });
+    </script>
+  </body>
+</html>
