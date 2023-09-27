@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            align-items: center;
+            background-color: grey;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #c1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .outer {
+            width: 1150px;
+            height: 800px;
+            background-color: #ffbb00;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-left: 30px;
+            font-weight: 800;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+        }
+
+        .start {
+            margin-top: 5px;
+            margin-left: 85px;
+            width: 950px;
+        }
+
+        .comp1 {
+            display: flex;
+            justify-content: center;
+            margin-left: 200px;
+        }
+
+        .comp2 {
+            display: flex;
+            margin-left: 100px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+        .comp3 {
+            display: flex;
+            margin-left: 80px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+        .x2 {
+            margin-left: 1px;
+        }
+
+        .y2 {
+            margin-left: 1px;
+        }
+
+        .z2 {
+            margin-left: 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .left {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #a1 {
+            border: 2x solid white;
+        }
+
+        #c101 {
+            display: flex;
+            align-items: center;
+            background-color: rgb(17, 0, 32);
+            color: #ffbb00;
+            margin-left: -4px;
+            height: 200px;
+        }
+
+        .img1 {
+            height: 75px;
+            width: 145px;
+            padding-top: 15px;
+            border-top: 3px dotted white;
+            border-radius: 50%;
+        }
+
+        .img2 {
+            padding-top: 15px;
+            height: 95px;
+            width: 165px;
+            border-top: 3px dotted white;
+            border-radius: 45%;
+        }
+
+        .img3 {
+            height: 95px;
+            width: 165px;
+            padding-top: 15px;
+            border-top: 3px dotted white;
+            border-radius: 45%;
+        }
+
+        #c2 {
+            display: flex;
+            align-items: center;
+            height: 200px;
+            background-color: #ffbb00;
+            color: rgb(17, 0, 32);
+            ;
+        }
+
+        #c3 {
+            display: flex;
+            align-items: center;
+            background-color: rgb(17, 0, 32);
+            color: #ffbb00;
+            margin-right: -4px;
+            height: 200px;
+        }
+
+        a.active {
+            color: #ffbb00;
+        }
+
+        a.hover {
+            color: #ffbb00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="c1" class="container-fluid">
+        <div class="outer">
+            <div class="top">
+                <div class="heading"><a href="#">
+                        <h1>Builderz</h1>
+                    </a></div>
+                <div class="comp1">
+                    <div class="x1"><i class="fa-solid fa-calendar-days fa-2x"></i></div>
+                    <div class="x2">
+                        <p style="font-size: 20px;">Opening Hour</p>
+                        <p style="font-size: 14px;">Mon-Fri, 8:00 - 9:00</p>
+                    </div>
+                </div>
+                <div class="comp2">
+                    <div class="y1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg></div>
+                    <div class="y2"><a href="#">
+                            <p style="font-size: 20px;">Call us</p>
+                        </a>
+                        <p>+012 3456789</p>
+                    </div>
+                </div>
+                <div class="comp3">
+                    <div class="z1"><i class="fa-solid fa-envelope fa-2x"></i><i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="z2"> <a href="#">
+                            <p style="font-size: 20px;">Email us</p>
+                        </a>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="start">
+                     <nav class="navbar navbar-dark " style="background-color:#03001C">
+                            <a class="navbar-brand active" href="#">HOME</a>
+                            <a class="navbar-brand" href="#">ABOUT</a>
+                            <a class="navbar-brand" href="#">SERVICE</a>
+                            <a class="navbar-brand" href="#">TEAM</a>
+                            <a class="navbar-brand" href="#">PROJECT</a>
+                            <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+                            <a class="navbar-brand" href="#">CONTACT</a>
+                        <div class="ml-auto">
+                            <a id="a1" class="navbar-brand" href="#" style="border: 2px solid white;"> Get a Quote </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://themewagon.github.io/builerz/img/carousel-1.jpg" height="450px"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide lab el</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://themewagon.github.io/builerz/img/carousel-1.jpg" height="450px"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://themewagon.github.io/builerz/img/carousel-1.jpg" height="450px"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="cl2" class="container text-center">
+                <div class="row">
+                    <div class="col" id="c101">
+                        <div class="img1">
+                            <i class="fas fa-helmet-safety fa-2x" style="color: #fdc700;"></i>
+
+                        </div>
+                        <div class="cont1">
+                            <h4>Expert worker</h4>
+                            <p style="font-weight: 700px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Iure explicabo qui ipsum!
+                                dignissimos facere asper.</p>
+                        </div>
+                    </div>
+                    <div class="col" id="c2">
+                        <div class="img2">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAeFBMVEX///8AAAAzMzMvLy9nZ2djY2PLy8uXl5ebm5vPz88UFBS0tLQcHBz7+/sKCgoqKio4ODjo6OiLi4tsbGza2to/Pz97e3vs7OxLS0u/v7/U1NSkpKTh4eGysrLFxcVRUVEQEBB3d3cjIyNWVlZGRkaGhoYZGRmhoaHUbze0AAAGv0lEQVR4nO2dabuyIBCG3/bMrY6V7eVp+///8E2yYhlQC5Q883zqGm3wdgFmQPz3D4VCoVAo1F+V70andqcCjZOVSY7lb6s69XxjHNsKMW6amSLZBNWCtOaGQBLifdSuQpe0qCA2AxKmzvfm7lxa/iItbG3GObmzlmZ8C1qmhSVmfJM7a2rGt6BpWljXjG8CYrR6p7RqCohjGqSqW8s4yMaMb0HGb62qQIw/7BMzvgVtmnJFjINUWmsZahAPqe+tGd+CftLCzmZ8t1Pf3tXZxHG8WV0H5jQcRi2DZ23+UZ/8DZnq/U6qjkciMxyVR4gdQxfkJvdSIcfJHMct3ll3T+NbAEdirFaoOy4kboP01ymqJvDpExDtbQpx29HtNbdE/a08cRvq9ppbYkv7TUzc/ur2mltiy4zbxoB42t3mlYggareNAWnMM4Igb5doCKSGBtGM28aA1NDXMuO2VpBtt0cp2SjN/oC29uYT1m27OgwBZMjFRJeJyhxxZi9m3NYJMuYOLcvjSMxC6L9l3NYJ0uEPrasy89bWEEEU2jj93XK5dDktiXap+jddARDnrjkLEmbmPQvCmFmQsF9EjjKqi6ORcLoUYkGy3wMW5HF+eywIY2ZBimosz0M6JbM99YLIE3iTslmrukFaPzBIt6Sb+kECcNjJv9fvs26UzB9KkiSKoq6okTmQECiOUkQOL1rIL8mObCo4kaVjDqTgMNU53XcPbVkTkIK5KgAkqxf56jcz89UvbX4LhOw7hraQUzkq5gUCofVJg1gQxKEvrAhy+S4Q8IqQUbvDWyBt/tAilVkAub4DQgbiT1KQ4C2QH/7QXJX5yFmDZzK8DAgZv+5JQYpGfSzIv+uMHuaYrZVm/zymzafd001pEHDY915rFZzZ0CkBXVxlQNx0X3CKHZnG0uoVq39rB5mQqA2eq+QJT2GOdDIQle2iSEKXwdeByMYZ918GIun83qoTPr9hNYinmuAxnZ/ajyRHEIwu3m/YAQeS2d6vVpCRuvfbDck+yTZ3AjKpkMC2n1KPBZkO6TkxzzIk5j4zg8blQPKSD70C+7xAZqVAllyq6uSrzHyD/+qLGwBZlAKZ8ffvUGU+8OZn5WMA5FgKpNK8VjmQvOa1ySBZpTJjQUZUXUOBMGbLQLLfH8fsCIIgCIIgCFIKJHs51WNBgsx8YEEYs2UgtOxr2VcL5l3g4yMFxYIImbiuylwQJO4xRS/6n4D4fEIi9CEQIbK8qszCqPVz2i0DsuD2egyGvAXiCGdvBYH4ERN5BJHSHLO5gdHg6YcBEYq+fgAiBtEOBKJLapDhq+g/DtKlN1QLAjU3CIIg5YUgoN4B8R16wssmxxwz02OoEZnaQaZcByBRml0ub/ca2jcMMstym54UREjjuyqzMA7jSEG8rOixFhCo0Jzeb6QyCz7hTqNst0pBdHTjtYJMBW+xFCQbcOADK3ocggqsaDMMIksRvxeP9DhnP7Sd/Uv2W1uoy48EHqm/vBEhLoe0nkPiVcTsDlO061N/weQDgiAIgkhAXLY/0X70JgCQ7C2KMQsyysz8QA9triAdFPNvFnhgOshIy641HWRVF6WCdBA/Jy7rAEjMwtKC8PC0jNckyIRLHmbr+UnMDkfyqlgsSAdNHUrTHLO/os3U6/21R4i6hCCgEORzIQio5oLkp4N0qfZ0kC7V3rLrkjmQCe/sAPZ+dclgOoibSBk85tpWAKI5HRTT3aLXe6UVgNSRDtKl2mN2XUIQUAjyuWpPB+lS7ekgXao9HaRLtaeDdMlwp/HxEYLg20EaE1ghSGkhCCgE+Vx2g8STSdGPrxgGCbNhskN5kF0yJv8azea7/L1tTQf5A2Yg5HeQe2HsTAeJH73yXPU/7EwHCStXpEpKgFiSDjpT8JfXMYHLZsAgdqSD1lnpv/Ndeg1jN8pglGsT2ZcOmtwP26NWyYizlzBUtZd9Mft9qa4Fu6LHlsQBqqVKrQO5R8gnvrq932+KFQ6sA7kvDCWusNKjH1pA1oGQvAGwRgaZ66lYMMo6EPKoQ0vekNfH5Kv62AZCmlFwtduuut6yDWQnbfrO6qfdNhBSO4G9EVILyL9yaBvIUA0yhLYQ2QZCOmjg+pzfCAJ6QBCuaAQBvTUfZIAgCAIJQZ56G2SHIJAKgRwRRAWyRBBIhUD2RkBcBIFUCGSBIAjy0N8DaTflYZ81BYS0dXlrmX5Dg3gfNLuqVyv/hk6juKaWTB2JSi93XlqFQMQVyexTMRCn6q9+l1feSteZdubvjQ8FflMBkL8+tkPtn8jWpvG56CwdFAqFQqFQX6r//ROAt1F4ANoAAAAASUVORK5CYII="
+                                height="60px" width="60px">
+                        </div>
+                        <div class="cont2">
+                            <h4>Quality Work</h4>
+                            <p style="font-weight: 700px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Iure explicabo qui ipsum!
+                                molestias ea vero in reprehen
+                                .</p>
+                        </div>
+                    </div>
+                    <div class="col" id="c3">
+                        <div class="img3">
+                            <i class="fas fa-phone fa-2x" style="color: #fdc700;"></i>
+                        </div>
+                        <div class="cont3">
+                            <h4>24/7 Support</h4>
+                            <p style="font-weight: 700px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Iure explicabo qui ipsum! Dicta,
+                                mollitia fuga voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
