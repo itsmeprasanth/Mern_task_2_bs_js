@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task8</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+
+      .form-container{
+        position: absolute;
+        left: 30%;
+        margin: 30px;
+        padding: 20px;
+        background: linear-gradient(yellow, #f0768b);
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <div class="form-container align-items-center">
+        <form class="needs-validation" novalidate>
+          <h2 class="form-label" style="color: blue">Registration Form</h2>
+          <label for="validationCustom01" class="form-label">
+            First Name
+          </label>
+          <input
+            id="validationCustom01"
+            class="form-control"
+            type="text"
+            required
+          />
+          <div class="invalid-feedback">Poor</div>
+
+          <label class="form-label" for="validationCustom02">Last Name</label>
+          <input
+            class="form-control"
+            id="validationCustom02"
+            type="text"
+            required
+          />
+          <div class="invalid-feedback">Poor</div>
+
+          <label class="form-label" for="validationCustom03"> Email </label>
+          <input
+            class="form-control"
+            id="validationCustom03"
+            type="email"
+            required
+          />
+          <div class="invalid-feedback">Poor</div>
+          <label class="form-label" for="validationCustom04"> Password </label>
+          <input
+            id="validationCustom04"
+            class="form-control"
+            type="password"
+            name="pass1"
+            required
+          />
+          <div class="invalid-feedback">Poor</div>
+
+          <label class="form-label" for="validationCustom05">
+            Re-enter Password
+          </label>
+          <input
+            id="validationCustom05"
+            class="form-control"
+            type="password"
+            name="pass2"
+            required
+          />
+          <div class="invalid-feedback">Poor or Mismatch</div>
+
+          <label class="form-label" for="gender"> Gender </label>
+          <td class="form-control" id="gender">
+            <input type="radio" name="Gender" />
+            <label class="form-label" for="Male">Male</label>
+            <input type="radio" name="Gender" />
+            <label class="form-label" for="Female">Female</label>
+            <br />
+            <label class="form-label" for="validationCustom06"> Age </label>
+            <input
+              id="validationCustom06"
+              class="form-control"
+              type="number"
+              min="0"
+              required
+            />
+            <div class="invalid-feedback">Poor</div>
+
+            <label for="validationCustom07"> Phone Number </label>
+            <input
+              id="validationCustom07"
+              class="form-control"
+              type="tel"
+              pattern="[0-9]{10}"
+              required
+            />
+            <div class="invalid-feedback">Poor</div>
+            <label class="form-label" for="validationCustom08"> Address </label>
+            <textarea
+              id="validationCustom08"
+              class="form-control"
+              name="textarea"
+            ></textarea>
+            <div class="invalid-feedback">Poor</div>
+            <label for="validationCustom09" class="form-label"> State </label>
+            <input class="form-control" type="text" required />
+            <div class="invalid-feedback">Poor</div>
+            <label for="validationCustom10" class="form-label"> Country </label>
+            <select id="validationCustom10" class="form-select" name="country"> 
+              <option selected>Choose</option>
+              <option value="aus">Australia</option>
+              <option value="ind">India</option>
+              <option value="ger">Germany</option>
+              <option value="eng">England</option>
+              <option value="pak">Pakistan</option>
+            </select>
+
+            <label for="lan" class="form-label"> Languages Known </label>
+            <input name="english" type="checkbox" />
+            <label for="english">English</label>
+            <input name="kan" type="checkbox" /><label for="kan">Kannada</label>
+            <input name="hin" type="checkbox" /><label for="hin">Hindi</label>
+            <input name="tel" type="checkbox" /><label for="tel">Telugu</label>
+            <br />
+
+            <input type="checkbox" name="declare" required />
+            <label for="declare">
+              Hereby I declare all the given details are true</label
+            >
+            <br />
+
+            <label for="">
+              Log in to <a href="https://ethnus.com/">Ethnus</a> website
+            </label>
+            <br />
+            <input
+              type="submit"
+              class="btn btn-danger form-text align-self-md-center"
+              value="Register"
+              required
+            />
+          </td>
+        </form>
+      </div>
+    </center>
+    <br />
+    <script>
+      function PasswordValidate() {}
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
